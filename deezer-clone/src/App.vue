@@ -25,57 +25,51 @@ import Bell from 'vue-material-design-icons/Bell.vue';
         src="https://yt3.ggpht.com/yti/ANjgQV9IisS8pSBrKpXYX9AhHycjG2iXcypkFbvoR022-ZYXZew=s88-c-k-c0x00ffffff-no-rj"
       />
     </div>
-
-    <div
-      id="SideNav"
-      class="fixed w-[240px] bg-[#191922] h-[100vh] border-r border-r-[#32323D]"
-    >
-      <div class="w-full pl-6 pt-3 cursor-pointer">
-        <RouterLink to="/" class="tex"> Deezer </RouterLink>
-      </div>
-
-      <div class="mt-[53px]"></div>
-
-      <SideMenuItem
-        iconString="music"
-        :iconSize="20"
-        pageUrl="/"
-        name="Music"
-      />
-      <SideMenuItem
-        iconString="podcast"
-        :iconSize="20"
-        pageUrl="/podcasts"
-        name="Podcasts"
-      />
-      <SideMenuItem
-        iconString="explore"
-        :iconSize="20"
-        pageUrl="/artist"
-        name="Explore"
-      />
-      <SideMenuItem
-        iconString="favourite"
-        :iconSize="20"
-        pageUrl="/favourite"
-        name="Favourites"
-      />
-
-      <div class="text-[#A2A2AD] font-light text-[12px] pl-[62px] mt-[25px]">
-        <div class="py-[9px] hover:text-[#EF5465] cursor-pointer">
-          Favourite tracks
-        </div>
-        <div class="py-[9px] hover:text-[#EF5465] cursor-pointer">Playlist</div>
-        <div class="py-[9px] hover:text-[#EF5465] cursor-pointer">Albums</div>
-        <div class="py-[9px] hover:text-[#EF5465] cursor-pointer">Artists</div>
-        <div class="py-[9px] hover:text-[#EF5465] cursor-pointer">Podcasts</div>
-      </div>
+  </div>
+  <div
+    id="SideNav"
+    class="fixed w-[240px] bg-[#191922] h-[100vh] border-r border-r-[#32323D]"
+  >
+    <div class="w-full pl-6 pt-3 cursor-pointer">
+      <RouterLink to="/" class="text-white"> Deezer </RouterLink>
     </div>
 
-    <div
-      class="fixed w-[calc(100%-120px)] h-[calc(100%-56px)] ml-[240px] mt-[56px] overflow-x-auto"
-    >
-      <RouterView />
+    <div class="mt-[53px]"></div>
+
+    <SideMenuItem iconString="music" :iconSize="20" pageUrl="/" name="Music" />
+    <SideMenuItem
+      iconString="podcast"
+      :iconSize="20"
+      pageUrl="/podcasts"
+      name="Podcasts"
+    />
+    <SideMenuItem
+      iconString="explore"
+      :iconSize="20"
+      pageUrl="/artist"
+      name="Explore"
+    />
+    <SideMenuItem
+      iconString="favourite"
+      :iconSize="20"
+      pageUrl="/favourite"
+      name="Favourites"
+    />
+
+    <div class="text-[#A2A2AD] font-light text-[12px] pl-[62px] mt-[25px]">
+      <div class="py-[9px] hover:text-[#EF5465] cursor-pointer">
+        Favourite tracks
+      </div>
+      <div class="py-[9px] hover:text-[#EF5465] cursor-pointer">Playlist</div>
+      <div class="py-[9px] hover:text-[#EF5465] cursor-pointer">Albums</div>
+      <div class="py-[9px] hover:text-[#EF5465] cursor-pointer">Artists</div>
+      <div class="py-[9px] hover:text-[#EF5465] cursor-pointer">Podcasts</div>
     </div>
+  </div>
+
+  <div
+    class="fixed w-[calc(100%-120px)] h-[calc(100%-56px)] ml-[240px] mt-[56px] overflow-x-auto"
+  >
+    <RouterView />
   </div>
 </template>
