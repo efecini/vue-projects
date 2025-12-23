@@ -1,5 +1,4 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue';
 import Magnify from 'vue-material-design-icons/Magnify.vue';
 import Bell from 'vue-material-design-icons/Bell.vue';
 </script>
@@ -32,7 +31,7 @@ import Bell from 'vue-material-design-icons/Bell.vue';
       class="fixed w-[240px] bg-[#191922] h-[100vh] border-r border-r-[#32323D]"
     >
       <div class="w-full pl-6 pt-3 cursor-pointer">
-        <RouterLink to="/"> </RouterLink>
+        <RouterLink to="/" class="tex"> Deezer </RouterLink>
       </div>
 
       <div class="mt-[53px]"></div>
@@ -72,6 +71,11 @@ import Bell from 'vue-material-design-icons/Bell.vue';
         <div class="py-[9px] hover:text-[#EF5465] cursor-pointer">Podcasts</div>
       </div>
     </div>
+
+    <div
+      class="fixed w-[calc(100%-120px)] h-[calc(100%-56px)] ml-[240px] mt-[56px] overflow-x-auto"
+    >
+      <RouterView />
+    </div>
   </div>
-  <HelloWorld />
 </template>
